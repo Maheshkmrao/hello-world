@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CrowdSensing">
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This sample app will sense the below Sensors data.\nAccelerometer, Ambient Temperature, Audio Level, Activity, Battery, Bluetooth, Gravity, Gyroscope, Light, Linear Acceleration, Location, Magnetometer, Rotation Screen Status, Step Counter and Step Detector. \nIt will store these data in External Storage in MySensorsDemo folder."
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="30pt"
+        android:gravity="center"
+        android:text="Stopped"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sensing"
+        android:layout_width="fill_parent"
+        android:layout_height="40pt"
+        android:text="Start Sensing" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="fill_parent"
+        android:layout_height="40pt"
+        android:enabled="false"
+        android:text="Pause" />
+
+    <TextView
+        android:id="@+id/note_text"
+        android:layout_width="fill_parent"
+        android:layout_height="30pt"
+        android:gravity="center"
+        android:text="Note: Some sensors won't work due to devices not supprts all sensors."
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>
